@@ -1,0 +1,691 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+   
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+  }
+
+body{   margin: 0;
+    margin-bottom: 40px;
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;	
+	
+   
+}
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+ .sombra { 	padding: 5px 10px;   }
+ .sombra:hover { 	
+	background-color: rgb(248, 248, 243);  
+	border: 2px solid blue;  border-radius: 25px;
+    padding: 10px 15px; 
+   } 
+
+ .bottonn { 	padding: 5px 10px;     }
+ .bottonn:hover {	
+	background-color: rgb(231, 235, 12);
+	 color: rgb(35, 228, 154);   box-shadow: 0 0 10px var(--color) ;
+	 text-transform: uppercase; border-radius: 25px;
+	border: 5px solid blue; 
+	padding: 10px 15px;
+} 
+    /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+    .flotarr {
+		position: fixed;
+		left: 10px;
+		bottom: 30px;
+		transition: all 0.3s ease 0s;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+		z-index: 99;
+	}
+
+
+	.flotarrDer {
+		position: fixed;
+		right: 150px;
+		bottom: 30px;
+		transition: all 0.3s ease 0s;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+		z-index: 99;
+	}
+
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+.contienee{
+	min-height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sidebare
+{ float: left;
+  width: 400px;
+  padding: 0 20px 35px 20px;
+   height: 100px; 
+}
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+     .cajass{
+		min-height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+    /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+	.buttons{  box-sizing: border-box;
+		display: flex;
+		flex-direction: column;    
+	}
+	
+	.btn{
+		text-decoration: none;
+		padding: 15px 37px;
+		font-size: 1.1rem;
+		position: relative;
+		margin: 23px;
+	}
+	
+	.btn-1{
+		background: #039be5;
+		color: #ffffff;
+		border-radius: 30px;
+		transition: transform 0.3s ease;
+	}
+	
+	.btn-1::after, .btn-1::before{
+		content: "";
+		position: absolute;
+		opacity: 0.3;
+		background: #039be5;
+		border-radius: inherit;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		transition: transform 0.3s ease;
+	}
+	
+	.btn-1:hover{ transform: translate(-12px, -12px);}
+	
+	.btn-1:hover::after{ transform: translate(6px, 6px);}
+	
+	.btn-1:hover::before{ transform: translate(12px, 12px);}
+	
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+.headd{
+	background-color: #333;
+}
+
+
+.modal { margin-left: 700px;
+	position: relative;
+	transform: translate(-50%, -50%);
+	max-width: 1600px;
+	border-radius: 15px;
+	border: 2px solid blue;
+
+}
+
+.modal77 { 
+	 margin-left: 1050px;
+	 margin-top: -290px;
+	position: relative;
+	transform: translate(-50%, -50%);
+	width: 550px;
+	max-width: 700px;
+	border-radius: 15px;
+	border: 2px solid rgb(1, 1, 22);
+}
+
+.modal88 { 
+	margin-left: 450px;
+	margin-top: -25px;
+   position: relative;
+   transform: translate(-50%, -50%);
+   width: 550px;
+   max-width: 700px;
+   border-radius: 15px;
+   border: 2px solid rgb(1, 1, 19);
+}
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+nav{ 
+	max-width: 1600px;
+	width: 1300px;
+	margin: auto;
+	background-color: #333;
+	font-size: 14px;
+	margin-top: 2px;
+	position: absolute;
+	z-index: 20;
+}
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+	display: block;
+	padding: 12px 16px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+	background-color: rgb(5, 128, 31);
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+  
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+
+.menu-barra{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-barra > li > a{
+	display: block;
+	padding: 12px 16px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu-barra > li:hover{
+	background-color: rgb(5, 128, 31);
+}
+
+
+.menuAbajo{
+	margin-left: 140px;
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-barra li:hover .menuAbajo{
+	display: block;
+}
+
+.menuAbajo li:hover{
+	background-color: black;
+}
+
+.menuAbajo li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+
+.horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.horizontal > li > a{
+	display: block;
+	padding: 12px 16px;
+	color: white;
+	text-decoration: none;
+}
+
+.horizontal > li:hover{
+	font-size: 15px;
+}
+
+.vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.horizontal li:hover .vertical{
+	display: block;
+}
+
+.vertical li:hover{
+	background-color: black;
+}
+
+.vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+.blanco11{ 	border: 2px solid rgb(1, 1, 19);
+  background-color: #71e071; 
+   border-radius: 15px;
+   color: #000a12;
+}
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+.slider-box {
+	width: 1200px;
+	height: auto;
+	margin: 50px auto 0;
+	overflow: hidden;
+    z-index: 12;  
+  }
+  
+  .slider-box ul {
+	display: flex;
+	padding: 0;
+	width: 300%; /* 200% es para 2 fotos , 300% para 3 fotos , 400% para 4 fotos  y asi   /////*/
+	 animation: slide 10s infinite alternate ease-in-out;
+  }
+  
+  .slider-box li {
+	  width: 100%;
+	  list-style: none;
+	  position: relative;
+	}
+  
+	.slider-box img {
+	  width: 100%;
+	}
+  
+  
+		 @keyframes slide{
+	  0% {margin-left: 0; }
+	  20% {margin-left: 0; }
+	  
+	  25% {margin-left: -100%; }
+	  45% {margin-left: -100%; } /* ...hasta aqui para 2 fotos /////*/
+	                             
+	  50% {margin-left: -200%; }
+	  70% {margin-left:-200%; }  /* ...hasta aqui para 3 fotos /////*/
+
+			/* agregar hasta 75% y 95%  con margin:-300% para tener 4 fotos /////*/	
+	   }  
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+   @media (max-width:991px) {
+     body {
+		padding: 30px;
+	 }
+     .slider-box { 
+      width: 100%;
+	 }
+   }
+
+   /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+    .acommodo {
+		display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 10vh;
+	}
+
+
+   .footer{	   
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000a12;
+    min-height: 10vh;
+    }
+
+
+   /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+  .posicc{	   
+	margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+ 
+    }
+	
+	footer {	
+		border-color: aqua;
+		border: 2px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 40px;
+		color: white;
+	  }
+
+
+     .mostrarr{	position: absolute; }
+
+   /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+.carrousel{  
+    width: 45%;
+    height: 50%;
+	margin-left: 150px;
+    border-radius: 15px;
+	position: relative;
+}
+
+.conteCarrousel{ border-radius: 15px;  
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel{ border-radius: 15px;    
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{ border-radius: 15px;   
+    width: 100%;
+    height: 100%;
+	position: relative;
+}
+
+.itemCarrouselArrows{ border-radius: 15px;  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover { border-radius: 15px;
+    cursor: pointer;
+}
+
+#itemCarrousel-1{ border-radius: 15px;
+	border:5px solid rgb(15, 22, 1);
+}
+
+#itemCarrousel-2{ border-radius: 15px;
+	border:5px solid rgb(15, 22, 1);
+}
+
+#itemCarrousel-3{ border-radius: 15px;
+	border:5px solid rgb(15, 22, 1);
+}
+
+.conteCarrouselController{  border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{ border-radius: 15px;
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{ border-radius: 15px;
+    color: white;
+}
+
+
+	   /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+.centrarr2 {
+	 content: icon;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+  }
+
+  .centrarr1 {
+	margin-left: 100px;
+	justify-content: center;
+	max-width: 600px;
+	display: flex;
+	align-items: center;
+  }
+
+  form{ width:  50%; margin: 0 auto ;
+	margin-left: 100px;
+	justify-content: center;
+	max-width: 600px;
+	display: flex;
+	align-items: center;
+ }
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+
+.barra11 { margin-left: 100px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:3px solid rgb(1, 1, 15);
+	border-radius: 15px;
+}
+
+.barra11 > li > a{  border-radius: 15px;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+	display: block;
+	padding: 12px 16px;
+	color: rgb(11, 11, 218);
+	text-decoration: none;
+}
+   
+.barra11 > li:hover{  border-radius: 15px; 
+	background-color: rgb(190, 233, 104);
+}
+
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+.barra22 { margin-left: 100px;
+	font-size: 12px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:3px solid rgb(1, 1, 15);
+	border-radius: 15px;
+	height: 70px;
+}
+
+.barra22 > li > a{  border-radius: 15px;
+	font-size: 16px;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+	display: block;
+	padding: 10px 15px;
+	color: rgb(11, 11, 218);
+	text-decoration: none;
+}
+   
+.barra22 > li:hover{  border-radius: 15px;  font-size: 16px;
+	background-color: rgb(190, 233, 104);
+}
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+.torre11{
+	border-radius: 15px;
+	
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.barra11 li:hover .torre11{ 
+	border-radius: 15px;
+	
+	display: block;
+}
+
+.torre11 li:hover{ 
+	border-radius: 15px;	
+	background-color: black;
+}
+
+
+.torre11 li a{ 
+	border-radius: 15px;
+	
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+
+
+.sliderr7 { 
+	width: 500px;
+	height: auto;
+	margin: 50px auto 0;
+	overflow: hidden;
+    z-index: 12;  
+  }
+  
+  .sliderr7 ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	 animation: sliderr7 10s infinite alternate ease-in-out;
+  }
+  
+  .sliderr7 li {
+	  width: 100%;
+	  list-style: none;
+	  position: relative;
+	}
+  
+	.sliderr7 img {
+	  width: 100%;
+	}
+  
+  
+		 @keyframes sliderr7{
+	  0% {margin-left: 0; }
+	  20% {margin-left: 0; }
+	  
+	  25% {margin-left: -100%; }
+	  45% {margin-left: -100%; }
+	  
+	  50% {margin-left: -200%; }
+	  70% {margin-left:-200%; }
+
+	  75% {margin-left: -300%; }
+	  95% {margin-left:-300%; }
+	   }  
+
+	   /* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////*/
